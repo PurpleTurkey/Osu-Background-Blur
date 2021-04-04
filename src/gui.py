@@ -14,6 +14,7 @@ from replacer import *
 from PIL.ImageQt import ImageQt
 import PIL
 import sys, os
+import multiprocessing as mp
 
 def resource_path(relative_path):
      if hasattr(sys, '_MEIPASS'):
@@ -205,6 +206,7 @@ class Ui_scan(object):
 
 if __name__ == "__main__":
     import sys
+    mp.freeze_support()
     app = QtWidgets.QApplication(sys.argv)
     test = QtWidgets.QWidget()
     ui = Ui_scan()
