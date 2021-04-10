@@ -7,11 +7,6 @@ from PySide2.QtQml import QQmlApplicationEngine
 from PySide2.QtCore import QObject, Slot, Signal
 from PySide2.QtWidgets import *
 
-from eventhandler import EventHandler
-
-
-Manager = EventHandler() 
-
 class MainWindow(QObject):
     def __init__(self):
         QObject.__init__(self)
